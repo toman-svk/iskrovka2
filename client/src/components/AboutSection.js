@@ -1,5 +1,6 @@
 import '../styles/AboutSection.css';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -11,7 +12,10 @@ export default function AboutSection() {
           <div className="about-left">
             <h1>{t('AboutSection.header1')}</h1>
             <p>{t('AboutSection.text1')}</p>
-            <button className="cta-button">{t('AboutSection.button1')}</button>
+            
+            <Link to="/about" className="cta-button">
+                {t('AboutSection.button1')}
+            </Link>
           </div>
           <div className="about-right">
             <img

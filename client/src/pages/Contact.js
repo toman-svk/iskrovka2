@@ -1,9 +1,19 @@
 import '../styles/Contact.css';
 import ContactForm from "../components/ContactForm";
 import { useLanguage } from '../contexts/LanguageContext';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Contact() {
   const { t } = useLanguage();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact-form') {
+      const el = document.getElementById('contact-form');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
 
   const services = [
     {

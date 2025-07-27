@@ -1,8 +1,10 @@
 import '../styles/About.css';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function About() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   return (
     <div className='about-outer-wrapper'>
@@ -42,7 +44,10 @@ export default function About() {
             {t('AboutPage.button-sample')}
           </button>
 
-          <button className="about-button">
+          <button
+            className="about-button"
+            onClick={() => navigate('/contact#contact-form')}
+          >
             {t('AboutPage.button-order')}
           </button>
 

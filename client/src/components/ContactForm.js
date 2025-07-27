@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="contact-form">
       <div className="contact-section">
         <div className="section-left">
           <h2>{t('ContactForm.header')}</h2>

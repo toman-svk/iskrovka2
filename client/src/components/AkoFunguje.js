@@ -17,7 +17,12 @@ export default function AkoFunguje() {
             ))}
           </p>
 
-          <button className="cta-button">{t('AkoFunguje.button')}</button>
+          <button
+            className="cta-button"
+            onClick={() => window.open('images/ukazka_z_merania.pdf', '_blank')}
+          >
+            {t('AkoFunguje.button')}
+          </button>
         </div>
       </div>
     </div>
