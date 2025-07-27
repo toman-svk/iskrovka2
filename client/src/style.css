@@ -1,0 +1,105 @@
+:root {
+  --main-red: rgb(204, 0, 0);
+  --main-blue: #1F3A93;
+  --main-orange: #F96A0B;
+  --main-cream: #F9F9F8;
+  --background2: #ededed;
+  --card-text-color: grey;
+  --contact-form-background: #ededed;
+}
+
+/* src/style.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3rem;
+}
+
+
+/* Added consistent spacing for navbar buttons */
+.navbar-left button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Removed margin-right from .contact-button */
+/* (Assuming .contact-button styles are in Navbar.css, no margin-right here) */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Prezentacia obrazkov */ 
+
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 14px;
+}

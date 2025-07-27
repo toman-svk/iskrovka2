@@ -1,0 +1,98 @@
+{
+  "Navbar": {
+    "home-button": "Domov",
+    "o-skuske-button": "O iskrovej skúške",
+    "contact-button": "Kontakt"
+  },
+  "AboutSection": {
+    "header1": "Iskrová skúška strechy",
+    "text1": "Presné testovanie izolácie strechy pomocou iskrovej metódy. Zistíme, kde presne zateká – rýchlo, bez poškodenia a zbytočných zásahov.",
+    "button1": "Zistiť viac"
+  },
+  "ServiceOffer": {
+    "header1": "Iskrová skúška",
+    "text1": "Naše testovanie je založené na technickej presnosti. S odborným prístupom a jasnou komunikáciou vám pomáhame rýchlo vyriešiť problémy s izoláciou.",
+    "card1": "Presné zistenie stavu izolácie",
+    "card2": "Odborné odporúčania",
+    "card3": "Bez zbytočných nákladov"
+  },
+  "AboutPage": {
+    "header": "Iskrová skúška: Spoľahlivá kontrola tesnosti hydroizolačných fólií",
+    "paragraph1": "Čo je iskrová skúška a prečo ju využiť? Iskrová skúška je overená a presná metóda kontroly nepriepustnosti hydroizolačných vrstiev, najčastejšie PVC, TPO, FPO alebo asfaltových pásov. Pomocou detekčného zariadenia s vysokonapäťovým výbojom dokáže odhaliť aj tie najmenšie porušenia – mikrotrhliny, prepichnutia či netesnosti, ktoré by inak ostali skryté pod povrchom.",
+    "paragraph2": "Ako iskrová skúška funguje Princíp je jednoduchý: fólia sa podloží elektricky vodivým materiálom (napr. geotextília alebo vlhký podklad) a následne sa po povrchu vedie elektróda pripojená na vysokonapäťový zdroj. Ak je v izolácii diera alebo trhlina, elektrický výboj cez ňu preskočí – čo sa okamžite zaznamená. Tento proces je rýchly, presný a spoľahlivý.",
+    "when-header": "Kedy sa odporúča vykonať iskrovú skúšku?",
+    "when-list": [
+      "Po novej pokládke strešnej fólie",
+      "Po opravách alebo zásahoch do izolácie",
+      "Pred odovzdaním stavby (na overenie kvality dodávateľa)",
+      "Pri podozrení na zatekanie",
+      "Preventívne pri údržbe striech"
+    ],
+    "benefits-header": "Výhody iskrovej skúšky",
+    "benefits-list": [
+      "Odhalí aj mikroskopické poškodenia",
+      "Neinvazívna metóda – nepoškodí fóliu",
+      "Rýchla realizácia",
+      "Zvyšuje istotu a znižuje riziko neskorších škôd",
+      "Hodí sa na ploché aj šikmé strechy s fóliovou hydroizoláciou"
+    ],
+    "for-header": "Pre koho je iskrová skúška určená",
+    "for-list": [
+      "Správcovia budov – na prevenciu zatekania a zníženie nákladov na opravy",
+      "Stavebné firmy a developeri – na kontrolu kvality prác a preukázateľné výsledky",
+      "Majitelia domov – pri pochybnostiach o spoľahlivosti strechy"
+    ],
+    "button-sample": "Pozrieť ukážku z merania",
+    "button-order": "Objednať si iskrovú skúšku"
+  },
+  "ContactPage": {
+    "header": "Kontaktujte nás",
+    "email-title": "Email",
+    "email-description": "info@iskrovka.cz",
+    "phone-title": "Telefón",
+    "phone-description": "+421 948 355 730",
+    "office-title": "Kancelária",
+    "office-description": "Seredská 255A/9173, 917 05 Trnava, Slovensko"
+    },
+    "ContactForm": {
+        "header": "Kontaktný formulár",
+        "name-label": "Meno",
+        "name-placeholder": "Vaše meno",
+        "email-label": "Email",
+        "email-placeholder": "Váš email",
+        "message-label": "Správa",
+        "message-placeholder": "Napíšte svoju správu...",
+        "terms-label": "Súhlasím s podmienkami",
+        "submit-button": "Odoslať",
+        "success-alert": "Správa bola odoslaná!",
+        "error-alert": "Nastala chyba pri odosielaní."
+        },
+    "AkoFunguje": {
+        "header": "Iskrová skúška strechy",
+        "paragraph1": "Iskrová skúška je presný spôsob, ako odhaliť poruchy a netesnosti na hydroizolácii plochých striech. Meranie sa vykonáva bez poškodenia strešnej vrstvy a výsledok získate ihneď. Súčasťou výstupu je aj protokol o vykonanej skúške.",
+        "checklist": [
+            "Presná lokalizácia netesností",
+            "Odborné odporúčania ďalšieho postupu",
+            "Bez zbytočných zásahov alebo rozoberania strechy"
+        ],
+        "button": "Pozrieť skúšku z merania"
+        },
+    "PrecoIskrovka": {
+        "header": "Prečo si vybrať Iskrovku?",
+        "text": "Iskrovka predlžuje životnosť vašich striech a znižuje náklady na opravy. Naše iskrové skúšky zabezpečujú včasné odhalenie problémov, čím šetríte čas a peniaze."
+        },
+    "Referencie": {
+        "header": "Referencie",
+        "intro": "Pomohli sme desiatkam zákazníkov presne zistiť stav strešnej izolácie. Tu sú ich skúsenosti:",
+        "review1": {
+            "text": "“S Iskrovkou sme získali istotu, že je všetko v poriadku. Prístup bol profesionálny a presný.”",
+            "author": "Ján Novák",
+            "position": "Majiteľ, Stavby s.r.o."
+        },
+        "review2": {
+            "text": "„Odporúčam každému, kto potrebuje spoľahlivú kontrolu izolácie. Rýchle a jasné výsledky.“",
+            "author": "Mária Kováčová",
+            "position": "Manažérka, Postav s.r.o."
+        }
+        }
+}

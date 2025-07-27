@@ -1,0 +1,98 @@
+{
+  "Navbar": {
+    "home-button": "Home",
+    "o-skuske-button": "About Spark Test",
+    "contact-button": "Contact"
+  },
+  "AboutSection": {
+    "header1": "Spark Roof Test",
+    "text1": "Precise roof insulation testing using the spark method. We identify exactly where it leaks – quickly, without damage or unnecessary interventions.",
+    "button1": "Learn More"
+  },
+  "ServiceOffer": {
+    "header1": "Spark Test",
+    "text1": "Our testing is based on technical precision. With a professional approach and clear communication, we help you quickly resolve insulation issues.",
+    "card1": "Precise insulation condition detection",
+    "card2": "Expert recommendations",
+    "card3": "No unnecessary costs"
+  },
+  "AboutPage": {
+    "header": "Spark Test: Reliable Inspection of Waterproof Membranes",
+    "paragraph1": "What is a spark test and why use it? The spark test is a proven and accurate method for checking the impermeability of waterproofing layers, most commonly PVC, TPO, FPO, or bitumen sheets. Using a high-voltage detection device, it can reveal even the smallest defects – microcracks, punctures, or leaks that would otherwise remain hidden under the surface.",
+    "paragraph2": "How does the spark test work? The principle is simple: the membrane is placed over a conductive base (e.g., geotextile or moist substrate), and an electrode connected to a high-voltage source is moved over the surface. If there's a hole or crack in the insulation, the electric spark jumps through it – which is immediately recorded. The process is fast, precise, and reliable.",
+    "when-header": "When is it recommended to perform a spark test?",
+    "when-list": [
+      "After laying a new roofing membrane",
+      "After repairs or interventions in the insulation",
+      "Before building handover (to verify contractor quality)",
+      "When leaks are suspected",
+      "Preventively during roof maintenance"
+    ],
+    "benefits-header": "Benefits of Spark Testing",
+    "benefits-list": [
+      "Detects even microscopic damage",
+      "Non-invasive method – doesn't damage the membrane",
+      "Quick execution",
+      "Increases confidence and reduces the risk of future damage",
+      "Suitable for flat and pitched roofs with foil waterproofing"
+    ],
+    "for-header": "Who is the spark test for",
+    "for-list": [
+      "Building managers – to prevent leaks and reduce repair costs",
+      "Construction companies and developers – to check workmanship and obtain verifiable results",
+      "Homeowners – when in doubt about roof reliability"
+    ],
+    "button-sample": "View Sample Measurement",
+    "button-order": "Order Spark Test"
+  },
+  "ContactPage": {
+    "header": "Contact Us",
+    "email-title": "Email",
+    "email-description": "info@iskrovka.cz",
+    "phone-title": "Phone",
+    "phone-description": "+421 948 355 730",
+    "office-title": "Office",
+    "office-description": "Seredská 255A/9173, 917 05 Trnava, Slovakia"
+    },
+    "ContactForm": {
+        "header": "Contact Form",
+        "name-label": "Name",
+        "name-placeholder": "Your name",
+        "email-label": "Email",
+        "email-placeholder": "Your email",
+        "message-label": "Message",
+        "message-placeholder": "Write your message...",
+        "terms-label": "I agree to the terms",
+        "submit-button": "Submit",
+        "success-alert": "Your message has been sent!",
+        "error-alert": "There was an error sending the message."
+        },
+    "AkoFunguje": {
+        "header": "Spark Roof Test",
+        "paragraph1": "The spark test is a precise way to detect defects and leaks in flat roof waterproofing. The measurement is non-destructive and results are immediate. A report is included.",
+        "checklist": [
+            "Precise leak localization",
+            "Expert recommendations for next steps",
+            "No unnecessary dismantling or damage"
+        ],
+        "button": "View Sample Test"
+        },
+    "PrecoIskrovka": {
+        "header": "Why Choose Iskrovka?",
+        "text": "Iskrovka extends the life of your roof and reduces repair costs. Our spark tests ensure early detection of issues, saving you time and money."
+        },
+    "Referencie": {
+        "header": "References",
+        "intro": "We’ve helped dozens of customers accurately identify roof insulation conditions. Here’s what they say:",
+        "review1": {
+            "text": "“With Iskrovka, we had peace of mind that everything was fine. The approach was professional and precise.”",
+            "author": "John Novak",
+            "position": "Owner, Stavby Ltd."
+        },
+        "review2": {
+            "text": "“Highly recommended for reliable insulation testing. Fast and clear results.”",
+            "author": "Maria Kovacova",
+            "position": "Manager, Postav Ltd."
+        }
+    }
+}

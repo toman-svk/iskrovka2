@@ -1,0 +1,66 @@
+
+.contact-wrapper {
+  padding: 60px 20px;
+  background-color: var(--main-blue);
+  text-align: center;
+}
+
+.contact-wrapper h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+.contact-wrapper p {
+    font-size: 1.5rem;
+    color: var(--main-blue);
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.2;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: nowrap;               /* ✅ allow wrapping if needed */
+  justify-content: center;       /* ✅ center children inside the grid */
+  gap: 1rem;                     /* optional: space between items */
+  max-width: 70%;             /* or 70%, or any fixed size */
+  margin: 0 auto;                /* ✅ center the whole grid itself */
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.contact-card {
+  min-width: 19rem;
+  max-width: 10rem;
+  min-height: 19rem;
+  max-height: 19rem;
+  flex: 0 0 auto;
+  background-color: var(--main-blue);
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  word-wrap: break-word;
+
+  cursor: default;
+}
+
+.contact-card img {
+  height: 5rem;
+  margin-bottom: 20px;
+}
+
+
+
+.contact-card h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}

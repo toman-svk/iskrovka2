@@ -1,0 +1,98 @@
+{
+  "Navbar": {
+    "home-button": "Domů",
+    "o-skuske-button": "O jiskrové zkoušce",
+    "contact-button": "Kontakt"
+  },
+  "AboutSection": {
+    "header1": "Jiskrová zkouška střechy",
+    "text1": "Přesné testování izolace střechy pomocí jiskrové metody. Zjistíme, kde přesně zatéká – rychle, bez poškození a zbytečných zásahů.",
+    "button1": "Zjistit více"
+  },
+  "ServiceOffer": {
+    "header1": "Jiskrová zkouška",
+    "text1": "Naše testování je založeno na technické přesnosti. S odborným přístupem a jasnou komunikací vám pomáháme rychle vyřešit problémy s izolací.",
+    "card1": "Přesné zjištění stavu izolace",
+    "card2": "Odborná doporučení",
+    "card3": "Bez zbytečných nákladů"
+  },
+  "AboutPage": {
+    "header": "Jiskrová zkouška: Spolehlivá kontrola těsnosti hydroizolačních fólií",
+    "paragraph1": "Co je jiskrová zkouška a proč ji využít? Jiskrová zkouška je ověřená a přesná metoda kontroly neprůchodnosti hydroizolačních vrstev, nejčastěji PVC, TPO, FPO nebo asfaltových pásů. Pomocí detekčního zařízení s vysokonapěťovým výbojem dokáže odhalit i ty nejmenší poruchy – mikrotrhliny, propíchnutí či netěsnosti, které by jinak zůstaly skryté pod povrchem.",
+    "paragraph2": "Jak jiskrová zkouška funguje? Princip je jednoduchý: fólie se podloží elektricky vodivým materiálem (např. geotextilie nebo vlhký podklad) a následně se po povrchu vede elektroda připojená na vysokonapěťový zdroj. Pokud je v izolaci díra nebo trhlina, elektrický výboj přes ni přeskočí – což se okamžitě zaznamená. Tento proces je rychlý, přesný a spolehlivý.",
+    "when-header": "Kdy se doporučuje provést jiskrovou zkoušku?",
+    "when-list": [
+      "Po nové pokládce střešní fólie",
+      "Po opravách nebo zásazích do izolace",
+      "Před předáním stavby (pro ověření kvality dodavatele)",
+      "Při podezření na zatékání",
+      "Preventivně při údržbě střech"
+    ],
+    "benefits-header": "Výhody jiskrové zkoušky",
+    "benefits-list": [
+      "Odhalí i mikroskopická poškození",
+      "Neinvazivní metoda – nepoškodí fólii",
+      "Rychlá realizace",
+      "Zvyšuje jistotu a snižuje riziko pozdějších škod",
+      "Vhodná pro ploché i šikmé střechy s fóliovou hydroizolací"
+    ],
+    "for-header": "Pro koho je jiskrová zkouška určena",
+    "for-list": [
+      "Správci budov – pro prevenci zatékání a snížení nákladů na opravy",
+      "Stavební firmy a developeři – pro kontrolu kvality prací a prokazatelné výsledky",
+      "Majitelé domů – při pochybnostech o spolehlivosti střechy"
+    ],
+    "button-sample": "Zobrazit ukázku z měření",
+    "button-order": "Objednat jiskrovou zkoušku"
+  },
+  "ContactPage": {
+    "header": "Kontaktujte nás",
+    "email-title": "E-mail",
+    "email-description": "info@iskrovka.cz",
+    "phone-title": "Telefon",
+    "phone-description": "+421 948 355 730",
+    "office-title": "Kancelář",
+    "office-description": "Seredská 255A/9173, 917 05 Trnava, Slovensko"
+    },
+    "ContactForm": {
+        "header": "Kontaktní formulář",
+        "name-label": "Jméno",
+        "name-placeholder": "Vaše jméno",
+        "email-label": "E-mail",
+        "email-placeholder": "Váš e-mail",
+        "message-label": "Zpráva",
+        "message-placeholder": "Napište svou zprávu...",
+        "terms-label": "Souhlasím s podmínkami",
+        "submit-button": "Odeslat",
+        "success-alert": "Zpráva byla odeslána!",
+        "error-alert": "Došlo k chybě při odesílání."
+        },
+    "AkoFunguje": {
+        "header": "Jiskrová zkouška střechy",
+        "paragraph1": "Jiskrová zkouška je přesný způsob, jak odhalit poruchy a netěsnosti na hydroizolaci plochých střech. Měření se provádí bez poškození vrstvy a výsledek získáte ihned. Součástí výstupu je i protokol o provedené zkoušce.",
+        "checklist": [
+            "Přesná lokalizace netěsností",
+            "Odborná doporučení dalšího postupu",
+            "Bez zbytečných zásahů nebo rozebírání střechy"
+        ],
+        "button": "Zobrazit zkoušku z měření"
+        },
+    "PrecoIskrovka": {
+        "header": "Proč si vybrat Iskrovku?",
+        "text": "Iskrovka prodlužuje životnost střech a snižuje náklady na opravy. Naše jiskrové zkoušky zajišťují včasné odhalení problémů, čímž šetříte čas i peníze."
+        },
+    "Referencie": {
+        "header": "Reference",
+        "intro": "Pomohli jsme desítkám zákazníků přesně zjistit stav střešní izolace. Zde jsou jejich zkušenosti:",
+        "review1": {
+            "text": "„S Iskrovkou jsme získali jistotu, že je vše v pořádku. Přístup byl profesionální a přesný.“",
+            "author": "Jan Novák",
+            "position": "Majitel, Stavby s.r.o."
+        },
+        "review2": {
+            "text": "„Doporučuji každému, kdo potřebuje spolehlivou kontrolu izolace. Rychlé a jasné výsledky.“",
+            "author": "Marie Kováčová",
+            "position": "Manažerka, Postav s.r.o."
+        }
+    }
+}

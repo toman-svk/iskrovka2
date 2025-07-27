@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+}
+
+
+.cta-button {
+  margin-top: 2rem;
+  background-color: var(--main-blue);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--main-orange);
+}
+
+
+.ako-funguje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 700px;
+  background-color: white;
+
+}
+
+.ako-funguje-content {
+  max-width: 800px;
+}
+
+.ako-funguje-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.ako-funguje h1 {
+  color: var(--main-blue)
+}
+
+.ako-funguje-zoznam {
+    margin-top: 3rem;
+  text-align: left;
+}

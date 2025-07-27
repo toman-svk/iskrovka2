@@ -1,0 +1,65 @@
+
+.about-outer-wrapper {
+    margin-top: 0rem;
+    padding-top: 1rem;
+    background-color: var(--main-blue);
+}
+
+.about-button {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  margin-right: 2rem;
+  background-color: var(--main-orange);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #e64a00;
+}
+
+.about-inside-wrapper {
+  width: 100%;
+  background-color: var(--main-blue);   
+  min-height: 50rem;
+}
+
+.about-inside-wrapper h1 {
+margin-top: 3rem;
+  font-size: 3rem;
+  color: white;
+  max-width: 70%;
+}
+
+.about-inside-wrapper p {
+  font-size: 1.3rem;
+  color: white;
+
+}
+
+
+.about-inside-wrapper h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  list-style-type: disc;
+  color: white;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+}

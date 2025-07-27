@@ -1,0 +1,210 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--main-blue);
+  padding: 0.75rem 1rem;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+}
+
+a.contact-button,
+a.normal-button {
+  text-decoration: none;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 16rem;
+  margin-right: 2rem;
+  margin-bottom: -0.5rem;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Language dropdown menu */
+
+.language-selector-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%; /* directly below the button */
+  left: 0;
+  z-index: 10;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.language-dropdown button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.language-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+.flag-icon.small {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1rem; /* Adjust spacing as needed */
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.75rem 0.75rem 2rem;
+}
+
+.flag-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.language-button:hover .flag-icon {
+  transform: scale(1.2);
+  background: none;
+}
+
+.language-button:hover  {
+  background: none;
+}
+
+.normal-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.normal-button:hover {
+  color: var(--main-orange);
+  background: none;
+}
+
+.contact-button {
+  background-color: #ff5500; /* Bright orange */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 3rem; /* Increase horizontal padding */
+  border-radius: 9999px; /* Fully rounded */
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+}
+
+.contact-button:hover {
+  background-color: #e64a00;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
