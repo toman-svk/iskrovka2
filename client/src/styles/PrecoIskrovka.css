@@ -1,11 +1,11 @@
 
 
-.about-section-wrapper {
+.preco-section-wrapper {
   width: 100%;
   background-color: white;
 }
 
-.about-section {
+.preco-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -13,7 +13,7 @@
 }
 
 
-.about-left {
+.preco-left {
   background-color: white;
   flex: 0 0 60%;
   color: black;
@@ -21,16 +21,16 @@
   justify-content: flex-start;
 }
 
-.about-left h1 {
+.preco-left h1 {
     color: var(--main-blue);
 }
 
-.about-left p {
+.preco-left p {
     font-size: 1.5rem;
   line-height: 1.6;
 }
 
-.about-right {
+.preco-right {
   background-color: white;
   color: var(--main-blue);
   padding-right: 2rem;
@@ -41,12 +41,61 @@
   justify-content: flex-start;
 }
 
-.about-image {
+.preco-image {
   width: auto;
   max-width: 100%;
   height: auto;
   max-height: 100%;
   border-radius: 8px;
   object-fit: contain;
+}
+
+
+/* Phone Layout */
+
+@media (max-width: 768px) {
+
+  .preco-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 350px !important;
+    max-height: 350px !important;
+  }
+
+  .preco-section-wrapper {
+  }
+
+  .preco-section-wrapper .container {
+    width: 95% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  .preco-left h1 {
+    font-size: 2rem;
+  }
+
+  .preco-left p {
+    font-size: 1rem !important;
+    margin-bottom: 3rem;
+  }
+
+  .preco-section-button {
+    font-size: 1rem !important;
+  }
+
+  .preco-left {
+    max-width: 55%;
+    min-width: 55%;
+  }
+
+  .preco-right {
+    max-width: 35%;
+    min-width: 35%;
+  }
+
+
 }
 

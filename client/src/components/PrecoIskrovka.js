@@ -5,18 +5,18 @@ export default function PrecoIskrovka() {
   const { t } = useLanguage();
 
   return (
-    <div className="about-section-wrapper">
+    <div className="preco-section-wrapper">
       <div className="container">
-        <div className="about-section container">
-          <div className="about-left">
+        <div className="preco-section">
+          <div className="preco-left">
             <h1>{t('PrecoIskrovka.header')}</h1>
             <p>{t('PrecoIskrovka.text')}</p>
           </div>
-          <div className="about-right">
+          <div className="preco-right">
             <img
               src="/images/lubos_iskri.jpg"
               alt={t('AkoFunguje.header')}
-              className="about-image"
+              className="preco-image"
             />
           </div>
         </div>

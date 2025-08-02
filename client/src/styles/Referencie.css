@@ -15,9 +15,11 @@
 
 .testimonials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* ✅ instead of space-between */
+  align-items: center;     /* ✅ make sure items are centered vertically too */
   gap: 2rem;
-  flex-wrap: nowrap; /* ⛳ prevents wrapping */
+  flex-wrap: wrap;         /* ✅ allow wrapping on smaller screens too */
+  text-align: left;
 }
 
 .testimonial-box {
@@ -56,4 +58,47 @@
 
 .testimonial-logo {
   height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .referencie-wrapper {
+
+  }
+
+  .referencie-heading,
+  .referencie-intro {
+    text-align: center;
+  }
+
+  .referencie-heading {
+    font-size: 2rem;
+  }
+
+  .referencie-intro {
+    font-size: 1rem !important;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials {
+    flex-direction: column; /* 🔄 stack vertically */
+    gap: 2rem;
+    align-items: center; /* Optional: centers all children horizontally */
+  }
+
+  .testimonial-box {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;   /* ✅ centers the box horizontally */
+  }
+
+  .testimonial-text, .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .referencie-wrapper .container {
+    width: 80% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
 }

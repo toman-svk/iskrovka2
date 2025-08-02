@@ -43,7 +43,7 @@
 }
 
 .about-left h1 {
-  color: var(--main-blue);
+  color: white;
 }
 
 .about-left p {
@@ -70,18 +70,35 @@
   border-radius: 8px;
 }
 
-
-
 /* Phone Layout */
 
 @media (max-width: 768px) {
 
   .about-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    min-height: 320px !important;
-    max-height: 320px !important;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about-left, .about-right {
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-right {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0; /* <-- reset padding */
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-left h1 {
@@ -90,23 +107,31 @@
 
   .about-left p {
     font-size: 1rem !important;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .about-section-button {
     font-size: 1rem !important;
+
   }
 
-  .about-left {
-    max-width: 55%;
-    min-width: 55%;
+  .about-section-wrapper .container {
+    width: 80% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
   }
 
-  .about-right {
-    max-width: 35%;
-    min-width: 35%;
-  }
+    .about-section-wrapper {
+    width: 100%;
+    background-color: var(--main-blue);
+    box-sizing: border-box;
+    overflow-x: hidden; /* prevents spilling */
+    min-height: 1100;
+    max-height: 1100px;
+    padding-bottom: 1rem;
 
+  }
 
 }
 

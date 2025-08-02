@@ -3,9 +3,9 @@ body {
 }
 
 
-.cta-button {
+.ako-funguje-button {
   margin-top: 2rem;
-  background-color: var(--main-blue);
+  background-color: var(--main-orange);
   color: white;
   font-size: 1.5rem;
   padding: 0.75rem 2rem;
@@ -16,12 +16,12 @@ body {
   transition: 0.3s ease;
 }
 
-.cta-button:hover {
+.ako-funguje-button:hover {
   background-color: var(--main-orange);
 }
 
 
-.ako-funguje {
+.ako-funguje-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +34,7 @@ body {
 
 .ako-funguje-content {
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .ako-funguje-content p {
@@ -42,11 +43,50 @@ body {
     font-weight: 300;
 }
 
-.ako-funguje h1 {
+.ako-funguje-content h1 {
   color: var(--main-blue)
 }
 
 .ako-funguje-zoznam {
     margin-top: 3rem;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+
+
+  .ako-funguje-content h1 {
+    font-size: 2rem;
+  }
+
+  .ako-funguje-content p {
+    font-size: 1rem;
+  }
+
+  .ako-funguje-wrapper {
+
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+  }
+
+  .ako-funguje-content {
+    width: 100%;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .ako-funguje-wrapper .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .ako-funguje-button {
+    font-size: 1rem;
+    background-color: var(--main-orange);
+  }
+
 }
