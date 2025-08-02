@@ -76,17 +76,12 @@
 
 @media (max-width: 768px) {
 
-  .container {
-    background-color: black;
-  }
-
   .about-section {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     min-height: 320px !important;
     max-height: 320px !important;
-    border: 2px dashed red; 
   }
 
   .about-left h1 {
@@ -105,15 +100,11 @@
   .about-left {
     max-width: 55%;
     min-width: 55%;
-    border: 2px dashed green; 
-
   }
 
   .about-right {
     max-width: 35%;
     min-width: 35%;
-    border: 2px dashed blue; 
-
   }
 
 
