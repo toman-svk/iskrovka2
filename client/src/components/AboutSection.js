@@ -8,12 +8,12 @@ export default function AboutSection() {
   return (
     <div className="about-section-wrapper">
       <div className="container">
-        <div className="about-section container">
+        <div className="about-section">
           <div className="about-left">
             <h1>{t('AboutSection.header1')}</h1>
             <p>{t('AboutSection.text1')}</p>
             
-            <Link to="/about" className="cta-button">
+            <Link to="/about" className="about-section-button">
                 {t('AboutSection.button1')}
             </Link>
           </div>

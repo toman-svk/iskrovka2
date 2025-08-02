@@ -22,17 +22,19 @@ export default function ServiceOffer() {
   return (
     <div className="service-offer-wrapper">
       <div className="container">
-        <h1>{t('ServiceOffer.header1')}</h1>
-        <p>{t('ServiceOffer.text1')}</p>
-        <div className="service-grid">
-          {services.map((service, index) => (
-            <div className="service-card" key={index}>
-              <img src={service.icon} alt={service.title} />
-              <h3>{service.title}</h3>
-              {/* Optional: Add description support later if needed */}
+          <div className='service-offer-section'> 
+            <h1>{t('ServiceOffer.header1')}</h1>
+            <p>{t('ServiceOffer.text1')}</p>
+            <div className="service-grid">
+              {services.map((service, index) => (
+                <div className="service-card" key={index}>
+                  <img src={service.icon} alt={service.title} />
+                  <h3>{service.title}</h3>
+                  {/* Optional: Add description support later if needed */}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
       </div>
     </div>
   );
