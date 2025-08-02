@@ -2,7 +2,7 @@
   --main-red: rgb(204, 0, 0);
   --main-blue: #1F3A93;
   --main-orange: #F96A0B;
-  --main-cream: #F9F9F8;
+  --main-cream: #f3f3f3;
   --background2: #ededed;
   --card-text-color: grey;
   --contact-form-background: #ededed;
@@ -76,31 +76,10 @@ h1 {
 }
 
 
-
-/* Prezentacia obrazkov */ 
-
-
-.hero {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 1s ease-in-out;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-shadow: 0 0 10px black;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -111,4 +90,13 @@ footer {
   padding: 20px;
   background-color: #eee;
   font-size: 14px;
+}
+
+
+.about-section-wrapper,
+.referencie-wrapper,
+.container,
+.App {
+  max-width: 100vw;
+  overflow-x: hidden;
 }

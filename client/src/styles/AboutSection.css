@@ -127,8 +127,7 @@
     background-color: var(--main-blue);
     box-sizing: border-box;
     overflow-x: hidden; /* prevents spilling */
-    min-height: 1100;
-    max-height: 1100px;
+
     padding-bottom: 1rem;
 
   }
