@@ -31,7 +31,7 @@
 }
 
 .about-inside-wrapper h1 {
-margin-top: 3rem;
+  margin-top: 3rem;
   font-size: 3rem;
   color: white;
   max-width: 70%;
@@ -62,4 +62,54 @@ margin-top: 3rem;
 
 .about-list li {
   margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .about-inside-wrapper h1 {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  .about-inside-wrapper h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-inside-wrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-list {
+    font-size: 1rem;
+  }
+
+  .about-button {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-outer-wrapper {
+    width: 100%;
+    background-color: var(--main-blue);
+  }
+
+  .about-inside-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-outer-wrapper .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }

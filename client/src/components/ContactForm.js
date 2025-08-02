@@ -27,56 +27,60 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container" id="contact-form">
-      <div className="contact-section">
-        <div className="section-left">
-          <h2>{t('ContactForm.header')}</h2>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">{t('ContactForm.name-label')}</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder={t('ContactForm.name-placeholder')}
-              required
+    <div className='contact-form-wrapper'>
+      <div className="container" id="contact-form">
+        <div className="contact-form-section">
+          <div className="section-left">
+            <h2>{t('ContactForm.header')}</h2>
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <label htmlFor="name">{t('ContactForm.name-label')}</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder={t('ContactForm.name-placeholder')}
+                required
+              />
+
+              <label htmlFor="email">{t('ContactForm.email-label')}</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder={t('ContactForm.email-placeholder')}
+                required
+              />
+
+              <label htmlFor="message">{t('ContactForm.message-label')}</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder={t('ContactForm.message-placeholder')}
+                required
+              ></textarea>
+
+              <div className="checkbox-row">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label htmlFor="terms">{t('ContactForm.terms-label')}</label>
+              </div>
+
+              <button type="submit" className="submit-button">
+                {t('ContactForm.submit-button')}
+              </button>
+            </form>
+          </div>
+
+          <div className="section-right">
+            <img
+              src="/images/lubos_iskri.jpg"
+              alt="Iskrová skúška na streche"
+              className="contact-image"
             />
-
-            <label htmlFor="email">{t('ContactForm.email-label')}</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder={t('ContactForm.email-placeholder')}
-              required
-            />
-
-            <label htmlFor="message">{t('ContactForm.message-label')}</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder={t('ContactForm.message-placeholder')}
-              required
-            ></textarea>
-
-            <div className="checkbox-row">
-              <input type="checkbox" id="terms" name="terms" required />
-              <label htmlFor="terms">{t('ContactForm.terms-label')}</label>
-            </div>
-
-            <button type="submit" className="submit-button">
-              {t('ContactForm.submit-button')}
-            </button>
-          </form>
-        </div>
-
-        <div className="section-right">
-          <img
-            src="/images/lubos_iskri.jpg"
-            alt="Iskrová skúška na streche"
-            className="contact-image"
-          />
+          </div>
         </div>
       </div>
+
     </div>
+    
   );
 }
