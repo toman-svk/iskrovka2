@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: var(--main-cream);
 }
 
 
@@ -28,7 +28,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 700px;
-  background-color: white;
+  background-color: var(--main-cream);
 
 }
 
