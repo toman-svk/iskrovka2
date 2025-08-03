@@ -19,7 +19,7 @@ export default function AboutSection() {
           </div>
           <div className="about-right">
             <img
-              src="/images/adam/adam1.jpg"
+              src="/images/adam/adam0.jpg"
               alt={t('AboutSection.header1')}
               className="about-image"
             />
