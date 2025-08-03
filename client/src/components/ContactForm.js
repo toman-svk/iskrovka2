@@ -72,7 +72,7 @@ export default function ContactForm() {
 
           <div className="section-right">
             <img
-              src="/images/lubos_iskri.jpg"
+              src="/images/adam/adam2.jpg"
               alt="Iskrová skúška na streche"
               className="contact-image"
             />
