@@ -48,7 +48,10 @@ const Navbar = () => {
         <div className='navbar-left-mobile'>
           <button
             className="hamburger"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              setLanguageMenuOpen(false); // Close language menu
+            }}
           >
             <FaBars />
           </button>
@@ -56,7 +59,10 @@ const Navbar = () => {
             <div className="language-selector">
               <button
                 className="language-button"
-                onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                onClick={() => {
+                  setLanguageMenuOpen(!languageMenuOpen);
+                  setMenuOpen(false); // Close nav menu
+                }}
               >
                 <img
                   src={languages[language].flag}
@@ -65,8 +71,7 @@ const Navbar = () => {
                 />
               </button>
 
-              {languageMenuOpen && (
-                <div className="language-dropdown">
+                <div className={`language-dropdown ${languageMenuOpen ? 'show' : ''}`}>
                   {Object.entries(languages)
                     .filter(([key]) => key !== language)
                     .map(([code, { label, flag }]) => (
@@ -82,14 +87,13 @@ const Navbar = () => {
                       </button>
                     ))}
                 </div>
-              )}
+              
             </div>
           </div>
         </div>
 
         {/* Mobile nav links (toggle with hamburger) */}
-        {menuOpen && (
-          <div className="nav-links-mobile">
+          <div className={`nav-links-mobile ${menuOpen ? 'show' : ''}`}>
             <Link to="/" className="normal-button" onClick={() => setMenuOpen(false)}>
               {t('Navbar.home-button')}
             </Link>
@@ -100,7 +104,6 @@ const Navbar = () => {
               {t('Navbar.contact-button')}
             </Link>
           </div>
-        )}
 
         <div className='navbar-right-mobile'>
           <img src="/images/logo_na_modrom.png" alt="Logo" className="logo" />

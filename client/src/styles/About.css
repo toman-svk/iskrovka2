@@ -99,6 +99,7 @@
   .about-outer-wrapper {
     width: 100%;
     background-color: var(--main-blue);
+    padding-bottom: 2rem;
   }
 
   .about-inside-wrapper {

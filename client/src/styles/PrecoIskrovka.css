@@ -2,7 +2,8 @@
 
 .preco-section-wrapper {
   width: 100%;
-  background-color: white;
+    background-color: var(--main-cream);
+  padding-bottom: 3rem;
 }
 
 .preco-section {
@@ -10,15 +11,16 @@
   justify-content: space-between;
   align-items: stretch;
   min-height: 700px;
+  background-color: var(--main-cream);
 }
 
 
 .preco-left {
-  background-color: white;
   flex: 0 0 60%;
   color: black;
   padding-top: 1rem;
   justify-content: flex-start;
+  background-color: var(--main-cream);
 }
 
 .preco-left h1 {
@@ -31,7 +33,7 @@
 }
 
 .preco-right {
-  background-color: white;
+  background-color: var(--main-cream);
   color: var(--main-blue);
   padding-right: 2rem;
   padding-top: 3rem;
@@ -64,6 +66,7 @@
 
   .preco-section-wrapper {
     background-color: var(--main-cream);
+    padding-bottom: 0rem;
   }
 
   .preco-section-wrapper .container {

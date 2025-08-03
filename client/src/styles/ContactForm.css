@@ -57,12 +57,13 @@
   resize: vertical;
 }
 
-.checkbox-row {
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  flex-wrap: nowrap;            /* 🛠 prevent label wrapping */
-  white-space: nowrap;          /* ✅ prevent text breaking to next line */
-}
+  .checkbox-row {
+    display: flex;               /* ✅ Ensure it's a row */
+    align-items: center;         /* ✅ Vertically align checkbox and text */
+    gap: 0.5rem;                 /* ✅ Control spacing between checkbox and label */
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
 
 .submit-button {
   padding: 0.75rem 1.5rem;
@@ -152,21 +153,10 @@
     align-items: flex-start; /* prevent form fields from centering weirdly */
   }
 
-  .checkbox-row {
-    display: flex;
-    align-items: center;
-    gap: 0.1rem;             /* 🔧 Reduce gap to pull label closer */
-    margin-bottom: 1rem;
-    white-space: nowrap;
-    width: 100%;
-    overflow-x: auto;
-  }
 
-  .checkbox-row label {
-    margin: 0;
-    padding: 0;
-    line-height: 1;   /* 👈 makes sure it aligns with the checkbox */
-    font-weight: 600; /* matches others */
+
+  .checkbox-row {
+    gap: 0.3rem;
   }
 
   .checkbox-row input[type="checkbox"] {
