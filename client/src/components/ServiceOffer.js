@@ -1,8 +1,10 @@
+import React, { useEffect, useRef } from 'react';
 import '../styles/ServiceOffer.css';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function ServiceOffer() {
   const { t } = useLanguage();
+  const cardsRef = useRef([]);
 
   const services = [
     {
@@ -19,22 +21,46 @@ export default function ServiceOffer() {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="service-offer-wrapper">
       <div className="container">
-          <div className='service-offer-section'> 
-            <h1>{t('ServiceOffer.header1')}</h1>
-            <p>{t('ServiceOffer.text1')}</p>
-            <div className="service-grid">
-              {services.map((service, index) => (
-                <div className="service-card" key={index}>
-                  <img src={service.icon} alt={service.title} />
-                  <h3>{service.title}</h3>
-                  {/* Optional: Add description support later if needed */}
-                </div>
-              ))}
-            </div>
+        <div className='service-offer-section'> 
+          <h1>{t('ServiceOffer.header1')}</h1>
+          <p>{t('ServiceOffer.text1')}</p>
+          <div className="service-grid">
+            {services.map((service, index) => (
+              <div
+                className="service-card"
+                key={index}
+                ref={(el) => (cardsRef.current[index] = el)}
+              >
+                <img src={service.icon} alt={service.title} />
+                <h3>{service.title}</h3>
+              </div>
+            ))}
           </div>
+        </div>
       </div>
     </div>
   );
