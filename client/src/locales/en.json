@@ -6,12 +6,12 @@
     "contact-button": "Contact"
   },
   "AboutSection": {
-    "header1": "How our measurement works",
+    "header1": "Spark Test",
     "text1": "We quickly and accurately identify where the roof is leaking. Without damaging the insulation and without unnecessary interventions.",
     "button1": "Learn more"
   },
   "ServiceOffer": {
-    "header1": "Spark Test",
+    "header1": "How our measurement works",
     "text1": "Our testing is based on technical precision. With a professional approach and clear communication, we help you quickly resolve insulation problems.",
     "card1": "Precise determination of insulation condition",
     "card2": "Report on the performed spark test",
