@@ -3,8 +3,15 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useNavigate } from 'react-router-dom';
 
 export default function About() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navigate = useNavigate();
+
+  // Pick the right PDF per language (fallback to SK)
+  const priceHref = {
+    sk: '/images/cennik_sk.pdf',
+    cz: '/images/cennik_cz.pdf',
+    en: '/images/cennik_en.pdf',
+  }[language] || '/images/cennik_sk.pdf';
 
   return (
     <div className='about-outer-wrapper'>
@@ -51,10 +58,10 @@ export default function About() {
             {t('AboutPage.button-order')}
           </button>
 
-          {/* ✨ New button for price list */}
+          {/* ✨ Price list by language */}
           <button
             className="about-button"
-            onClick={() => window.open('images/cennik.pdf', '_blank')}
+            onClick={() => window.open(priceHref, '_blank')}
           >
             {t('AboutPage.button-pricelist')}
           </button>
