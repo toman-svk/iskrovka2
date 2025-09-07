@@ -11,8 +11,9 @@ export default function Home() {
       <AboutSection />
       <ServiceOffer />
       <AkoFunguje />
-      <PrecoIskrovka/>
       <Referencie/>
+      <PrecoIskrovka/>
+
 
     </>
   );

@@ -43,7 +43,6 @@
   }
 
   .preco-section-wrapper {
-    background-color: white;
     padding-bottom: 0rem;
   }
 
@@ -52,8 +51,6 @@
     padding: 0 !important;
     margin: 0 auto !important;
     box-sizing: border-box;
-    
-
   }
 
   .preco-left h1 {
@@ -79,7 +76,7 @@
     max-width: 100%;
     min-width: 100%;
     margin-bottom: 2rem;
-    background-color: white;
+    margin-left: 0;
   }
 
   .preco-right {
@@ -88,8 +85,8 @@
     padding: 0; /* <-- reset padding */
   }
 
-  .preco-image {
-    width: 100%;
+  .about-image {
+    width: 100% !important;
     height: auto;
     display: block;
     margin-left: auto;

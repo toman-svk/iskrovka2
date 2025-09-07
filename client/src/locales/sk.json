@@ -50,7 +50,7 @@
   "ContactPage": {
     "header": "Kontaktujte nás",
     "email-title": "Email",
-    "email-description": "info@iskrovka.cz",
+    "email-description": "info@iskrovka.sk",
     "phone-title": "Telefón",
     "phone-description": "+421 948 355 730",
     "office-title": "Kancelária",
@@ -83,8 +83,8 @@
         "button": "Pozrieť ukážku z merania"
         },
     "PrecoIskrovka": {
-        "header": "Reálna skúsenosť zo stavby",
-        "text": "Pri kontrole strechy bytového domu v Bratislave sme odhalili niekoľko netesností v hydroizolácii. Voda presakovala cez detaily pri atike a spôsobovala škody v dvoch bytoch. Vďaka iskrovej skúške sme presne určili miesta prieniku vody, takže oprava bola rýchla a obmedzila sa len na potrebné miesta. Celý proces trval jeden deň a majiteľ ušetril tisíce eur, ktoré by inak musel investovať do rozsiahlej rekonštrukcie."
+        "header": "Zabezpečte si kontrolu strešnej izolácie ešte dnes",
+        "text": "Kontaktujte nás"
         },
     "Referencie": {
         "header": "Skúsenosti z našich stavieb",

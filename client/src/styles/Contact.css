@@ -1,61 +1,58 @@
-
 .contact-wrapper {
   padding: 60px 20px;
   background-color: var(--main-blue);
   text-align: center;
-
 }
 
 .contact-wrapper .container {
-  width: 80%;
-  margin: 0 auto;      /* center horizontally */
-
+  width: var(--container-width);   /* keep consistent with the rest of the site */
+  margin: 0 auto;
 }
 
 .contact-wrapper h1 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4rem;
-    color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
 .contact-wrapper p {
-    font-size: 1.5rem;
-    color: var(--main-blue);
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-    line-height: 1.2;
+  font-size: 1.5rem;
+  color: var(--main-blue);
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.2;
 }
 
+/* ---- Cards layout ---- */
 .contact-grid {
   display: flex;
-  flex-wrap: nowrap;               /* ✅ allow wrapping if needed */
-  justify-content: center;       /* ✅ center children inside the grid */
-  gap: 1rem;                     /* optional: space between items */
-  max-width: 70%;             /* or 70%, or any fixed size */
-  margin: 0 auto;                /* ✅ center the whole grid itself */
-  padding: 0 2rem;
+  flex-wrap: wrap;              /* allow natural wrapping */
+  justify-content: center;      /* center items */
+  align-items: stretch;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .contact-card {
-  min-width: 19rem;
-  max-width: 10rem;
-  min-height: 19rem;
-  max-height: 19rem;
-  flex: 0 0 auto;
-  background-color: var(--main-blue);
-  padding: 2rem 2rem;
+  /* ❌ min 19rem with max 10rem was invalid/caused overflow */
+  width: clamp(16rem, 22vw, 19rem);   /* responsive, no conflicts */
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
-  scroll-snap-align: start;
-  word-wrap: break-word;
-  cursor: default;
+  background-color: var(--main-blue);
+  color: white;
+  box-sizing: border-box;
 }
 
 .contact-card img {
   height: 5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 .contact-card h3 {
   font-size: 2rem;
@@ -69,44 +66,40 @@
   line-height: 1.4;
 }
 
-
+/* -------- Mobile -------- */
 @media (max-width: 768px) {
-
   .contact-wrapper .container {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    width: 100%;
+    padding: 0 1rem;          /* safe inner padding */
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .contact-wrapper h1 {
     font-size: 2rem;
-  }
-
-  .contact-card p {
-    font-size: 1rem;
-  }
-
-  .contact-card h3 {
-    font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .contact-grid {
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem; /* spacing between stacked cards */
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 
   .contact-card {
     width: 100%;
-    max-width: 12rem;
-    min-width: 12rem;
-    min-height: 8rem;
-    max-height: 8rem;
-    padding: 1rem;
+    max-width: 20rem;         /* neat width on phones */
+    padding: 1.25rem;
   }
 
   .contact-card img {
     height: 3rem;
   }
 
+  .contact-card h3 {
+    font-size: 1.25rem;
+  }
 }

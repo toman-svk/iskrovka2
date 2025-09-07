@@ -1,7 +1,15 @@
 /* Service Offer */
 
 .service-offer-wrapper {
-    background-color: var(--main-cream);
+  background-color: var(--main-white);
+}
+
+/* Keep this section centered and 80% wide on all screens */
+.service-offer-wrapper .container {
+  width: var(--container-width);   /* e.g., 80% from :root */
+  margin: 0 auto;                  /* center it */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .service-offer-section {
@@ -10,20 +18,19 @@
   text-align: center;
 }
 
-.service-offer-wrapper .container{
-  width: var(--container-width)
-}
-
+/* intro paragraph under the h1 */
 .service-offer-wrapper p {
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
 }
 
+/* cards row */
 .service-grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0;
 }
 
 .service-card {
@@ -33,7 +40,7 @@
   max-height: 19rem;
   flex: 0 0 auto;
   background-color: var(--main-blue);
-  padding: 2rem 2rem;
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
   scroll-snap-align: start;
@@ -42,14 +49,13 @@
   cursor: default;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* vertically center */
-  align-items: center;      /* horizontally center */
-
+  justify-content: center;
+  align-items: center;
 }
 
 .service-card img {
   height: 5rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .service-card:hover {
@@ -59,6 +65,7 @@
 
 .service-card h3 {
   font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: 8px;
   color: white;
 }
@@ -69,19 +76,8 @@
   line-height: 1.4;
 }
 
+/* -------- Mobile -------- */
 @media (max-width: 768px) {
-
-  .service-offer-wrapper .container {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .service-offer-wrapper {
-    padding-left: 0 ;
-    padding-bottom: 2rem;
-  }
-
   .service-offer-wrapper h1 {
     font-size: 2rem;
   }
@@ -92,41 +88,43 @@
   }
 
   .service-offer-section {
-    padding: 0;
-  }
+  padding-top: var(--mobile-section-padding);
+  padding-bottom: var(--mobile-section-padding);
+  text-align: center;
+}
 
-    .service-grid {
+  .service-grid {
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem; /* spacing between stacked cards */
-    padding: 0 1rem;
+    gap: 1.2rem;
+    padding: 0;
   }
 
   .service-card {
     width: 100%;
-    max-width: 12rem;
-    min-width: 12rem;
+    max-width: 14rem;   /* keep the compact card on phones */
+    min-width: 14rem;
     min-height: 8rem;
     max-height: 8rem;
     padding: 1rem;
-  }
 
-  .service-card h3 {
-    font-size: 1.25rem;
-  }
-
-  .service-card img {
-    height: 3rem;
-  }
-
-    /* Starting state */
-  .service-card {
+    /* animation starting state */
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
   }
 
-  /* When in view */
+  /* ✅ Restore smaller icon & title on mobile */
+  .service-card img {
+    height: 3rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
   .service-card.in-view {
     opacity: 1;
     transform: translateY(0);

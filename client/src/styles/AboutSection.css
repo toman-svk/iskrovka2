@@ -57,6 +57,7 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 0.5rem;
   }
 
   .about-section-left, .about-section-right {
@@ -69,6 +70,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0; /* <-- reset padding */
+    margin-left: 0rem;
   }
 
   .about-image {
@@ -105,7 +107,6 @@
     background-color: var(--main-blue);
     box-sizing: border-box;
     overflow-x: hidden; /* prevents spilling */
-
     padding-bottom: 1rem;
 
   }

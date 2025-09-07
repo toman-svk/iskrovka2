@@ -2,29 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 3rem 2rem;
-
   gap: 2rem;
-  flex-wrap: nowrap; /* Force horizontal layout */
+  padding: 3rem 0;            /* remove lateral padding to match container */
+  flex-wrap: nowrap;
+}
+
+.contact-form-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact-form-wrapper .h1 {
   color: var(--main-blue);
 }
 
-
 .section-left {
   flex: 1;
   color: var(--main-white);
   padding-top: 1rem;
-  justify-content: flex-start;
 }
 
 .section-right {
-  padding-top: 3rem;
-  margin-left: 3rem;
+  /* remove the push to the right on mobile/desktop */
+  margin-left: 0;
   min-width: 260px;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,19 +36,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  max-width: 100%;       /* allow full width of its parent */
-  width: 100%;           /* take full space given by section-left */
+  width: 90%;
 }
 
-.contact-form label {
-  font-weight: 600;
-  color: #000;
-}
+.contact-form label { font-weight: 600; color: #000; }
 
-.required {
-  color: red;
-  margin-left: 0.2rem;
-}
+.required { color: red; margin-left: 0.2rem; }
 
 .contact-form input,
 .contact-form textarea {
@@ -56,6 +50,7 @@
   font-size: 1rem;
   border-radius: 4px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -64,27 +59,19 @@
 }
 
 .checkbox-row {
-  display: flex;               /* ✅ Ensure it's a row */
-  align-items: center;         /* ✅ Vertically align checkbox and text */
-  gap: 0.5rem;                 /* ✅ Control spacing between checkbox and label */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1rem;
   white-space: nowrap;
 }
 
-.checkbox-row input[type="checkbox"] {
-  margin: 0;        /* remove browser default */
-  padding: 0;
-  width: auto;      /* make sure it doesn't stretch */
-  height: auto;
-}
-
-.checkbox-row label {
-  margin: 0;        /* remove default label margin */
-}
+.checkbox-row input[type="checkbox"] { margin: 0; padding: 0; width: auto; height: auto; }
+.checkbox-row label { margin: 0; }
 
 .submit-button {
   padding: 0.75rem 1.5rem;
-  background-color: #1c3294; /* or var(--main-blue) */
+  background-color: #1c3294;
   color: white;
   font-weight: 600;
   border: none;
@@ -93,9 +80,7 @@
   transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-  background-color: #102172;
-}
+.submit-button:hover { background-color: #102172; }
 
 .contact-image {
   width: auto;
@@ -103,91 +88,61 @@
   max-height: 30rem;
   border-radius: 8px;
   object-fit: cover;
+  margin-top: 2rem;
 }
 
+/* ---- Mobile ---- */
 @media (max-width: 768px) {
+  .contact-form-wrapper .container {
+    width: 90%;
+    padding: 0 1rem;           /* keep slight inner padding */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
 
   .contact-form-section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    overflow: hidden;
-  }
-
-  .section-left, .section-right {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  .section-right {
-    width: 100%;
     box-sizing: border-box;
-    padding: 0; /* <-- reset padding */
+    overflow-x: hidden;
+    padding: 1rem 0 1.5rem;
+    gap: 1rem;
   }
+
+  .section-left, .section-right { width: 100%; max-width: 100%; }
+
+  .section-right { padding: 0; }
 
   .contact-image {
     width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 
-  .section-left h1 {
-    font-size: 2rem;
-  }
+  .section-left h1 { font-size: 2rem; }
+  .section-left p  { font-size: 1rem !important; margin-bottom: 1rem; }
 
-  .section-left p {
-    font-size: 1rem !important;
-    margin-bottom: 2rem;
-  }
-
-  .submit-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contact-form-wrapper .container {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    box-sizing: border-box;
-  }
-
-    .contact-form-section {
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden; /* prevents spilling */
-    padding-bottom: 1rem;
-
-  }
+  .submit-button { display: block; margin: 0 auto}
 
   .contact-form {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto; /* center horizontally */
-    align-items: flex-start; /* prevent form fields from centering weirdly */
+    margin: 0 auto;
+    align-items: flex-start;
   }
 
-
-
-  .checkbox-row {
-    gap: 0.3rem;
-  }
-
-  .checkbox-row input[type="checkbox"] {
-    margin: 0;       /* 👈 remove browser default spacing */
-    padding: 0;
-    vertical-align: middle;
-  }
-
-  .checkbox-row label {
-    margin: 0 !important;  /* 🧼 Remove any inherited margin */
-  }
+  .checkbox-row { gap: 0.3rem; margin-bottom: 0rem;}
 
   .contact-form textarea::placeholder {
-    font-family: inherit;     /* ✅ match surrounding font */
+    font-family: inherit;
     font-size: 1rem;
     color: #888;
   }

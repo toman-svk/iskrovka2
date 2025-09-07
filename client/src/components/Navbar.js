@@ -26,6 +26,13 @@ const Navbar = () => {
     },
   };
 
+  // Pick the right PDF per language (fallback to SK)
+  const priceHref = {
+    sk: '/images/cennik_sk.pdf',
+    cz: '/images/cennik_cz.pdf',
+    en: '/images/cennik_en.pdf',
+  }[language] || '/images/cennik_sk.pdf';
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -102,9 +109,9 @@ const Navbar = () => {
           <Link to="/about" className="normal-button" onClick={() => setMenuOpen(false)}>
             {t('Navbar.o-skuske-button')}
           </Link>
-          {/* New Pricelist link (PDF) */}
+          {/* Pricelist link (PDF by language) */}
           <a
-            href="/images/cennik.pdf"
+            href={priceHref}
             target="_blank"
             rel="noopener noreferrer"
             className="normal-button"
@@ -167,9 +174,9 @@ const Navbar = () => {
           <Link to="/about" className="normal-button">
             {t('Navbar.o-skuske-button')}
           </Link>
-          {/* New Pricelist link (PDF) */}
+          {/* Pricelist link (PDF by language) */}
           <a
-            href="/images/cennik.pdf"
+            href={priceHref}
             target="_blank"
             rel="noopener noreferrer"
             className="normal-button"

@@ -1,8 +1,10 @@
 import '../styles/PrecoIskrovka.css';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function PrecoIskrovka() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   return (
     <div className="preco-section-wrapper">
@@ -10,7 +12,12 @@ export default function PrecoIskrovka() {
         <div className="preco-section">
           <div className="preco-left">
             <h1>{t('PrecoIskrovka.header')}</h1>
-            <p>{t('PrecoIskrovka.text')}</p>
+            <button
+            className="orange-button"
+            onClick={() => navigate('/contact#contact-form')}
+          >
+            {t('PrecoIskrovka.text')}
+          </button>
           </div>
           <div className="preco-right">
             <img

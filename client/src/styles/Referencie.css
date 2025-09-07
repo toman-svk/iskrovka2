@@ -1,3 +1,5 @@
+/* ===== Referencie (Testimonials) ===== */
+
 .referencie-wrapper {
   width: 100%;
   background-color: var(--main-white);
@@ -10,7 +12,8 @@
 }
 
 .referencie-wrapper .container {
-  width: var(--container-width)
+  width: var(--container-width); /* e.g. 80% */
+  margin: 0 auto;
 }
 
 .referencie-heading {
@@ -22,81 +25,118 @@
   margin-bottom: 3rem;
 }
 
+/* === Grid === */
+/* Desktop: 3 columns */
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 in one row on desktop */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
-  align-items: stretch; /* same height rows */
+  align-items: stretch;
+  justify-items: center;   /* center each card */
+  justify-content: center; /* center the grid block */
   text-align: left;
 }
 
+/* === Card === */
 .testimonial-box {
   background: #f8f8f8;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,.05);
-  transition: transform .4s ease, box-shadow .4s ease;
   cursor: default;
-  /* make content fill height nicely */
   display: flex;
   flex-direction: column;
+  width: 80%;
+
+
+  /* ✨ animation: starting state (global, all breakpoints) */
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity .6s ease,
+    transform .6s ease,
+    box-shadow .4s ease;
 }
 
-.testimonial-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+/* Visible state */
+.testimonial-box.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover lift only when visible and device supports hover */
+@media (hover: hover) {
+  .testimonial-box.in-view:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,.10);
+  }
+}
+
+/* Text inside card */
+.testimonial-header {
+  font-size: var(--text-size);
+  margin-bottom: 1rem;
 }
 
 .testimonial-text { 
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  flex: 1; /* pushes footer/author down if you add one later */
-}
-
-.testimonial-header {
-  font-size: var(--text-size);
-  margin-bottom: 1rem;
+  flex: 1; /* keeps future footer pinned to bottom */
 }
 
 .testimonial-logo {
   height: 2rem;
 }
 
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-box,
+  .testimonial-box.in-view {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* === Breakpoints === */
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .testimonials {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+/* Phone: 1 column stacked */
 @media (max-width: 768px) {
-  .referencie-wrapper {
-
-  }
-
   .referencie-heading,
-  .referencie-intro {
-    text-align: center;
-  }
+  .referencie-intro { text-align: center; }
 
-  .referencie-heading {
-    font-size: 2rem;
-  }
+  .referencie-heading { font-size: 2rem; }
 
   .referencie-intro {
     font-size: 1rem !important;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .testimonials {
-    flex-direction: column; /* 🔄 stack vertically */
-    gap: 2rem;
-    align-items: center; /* Optional: centers all children horizontally */
+    grid-template-columns: 1fr;   /* stack */
+    gap: 1.5rem;
+    justify-items: center;
+    justify-content: center;
   }
 
   .testimonial-box {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;   /* ✅ centers the box horizontally */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem;             /* a bit tighter on phones */
   }
 
-  .testimonial-text, .testimonial-author {
-    font-size: 1rem;
-  }
+  .testimonial-text,
+  .testimonial-author { font-size: 1rem; }
 
   .referencie-wrapper .container {
     width: 80% !important;
