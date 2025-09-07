@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  padding: 3rem 0;            /* remove lateral padding to match container */
+  padding: 3rem 0;               /* match container; no lateral push */
   flex-wrap: nowrap;
 }
 
+/* Keep the form content aligned with site container */
 .contact-form-wrapper {
-  width: 80%;
+  width: var(--container-width);
   margin: 0 auto;
 }
 
@@ -16,21 +17,24 @@
   color: var(--main-blue);
 }
 
+/* Left column */
 .section-left {
-  flex: 1;
+  flex: 1 1 0;
   color: var(--main-white);
   padding-top: 1rem;
 }
 
+/* Right column (image) */
 .section-right {
-  /* remove the push to the right on mobile/desktop */
-  margin-left: 0;
-  min-width: 260px;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 540px;              /* ✅ don’t let it get too wide */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+/* Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -40,7 +44,6 @@
 }
 
 .contact-form label { font-weight: 600; color: #000; }
-
 .required { color: red; margin-left: 0.2rem; }
 
 .contact-form input,
@@ -58,6 +61,7 @@
   resize: vertical;
 }
 
+/* Consent row */
 .checkbox-row {
   display: flex;
   align-items: center;
@@ -69,6 +73,7 @@
 .checkbox-row input[type="checkbox"] { margin: 0; padding: 0; width: auto; height: auto; }
 .checkbox-row label { margin: 0; }
 
+/* Submit */
 .submit-button {
   padding: 0.75rem 1.5rem;
   background-color: #1c3294;
@@ -82,28 +87,29 @@
 
 .submit-button:hover { background-color: #102172; }
 
+/* ✅ Responsive image – no cropping */
 .contact-image {
-  width: auto;
+  display: block;
+  width: 100%;
   height: auto;
-  max-height: 30rem;
+  max-width: 540px;              /* keep reasonable on desktop */
   border-radius: 8px;
-  object-fit: cover;
   margin-top: 2rem;
 }
 
 /* ---- Mobile ---- */
 @media (max-width: 768px) {
-  .contact-form-wrapper .container {
-    width: 90%;
-    padding: 0 1rem;           /* keep slight inner padding */
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
   .contact-form-wrapper {
     width: 100%;
     margin: 0 auto;
-}
+  }
+
+  .contact-form-wrapper .container {
+    width: 90%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 
   .contact-form-section {
     flex-direction: column;
@@ -115,22 +121,24 @@
     gap: 1rem;
   }
 
-  .section-left, .section-right { width: 100%; max-width: 100%; }
+  .section-left,
+  .section-right {
+    width: 100%;
+    max-width: 100%;
+  }
 
   .section-right { padding: 0; }
 
   .contact-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
   }
 
   .section-left h1 { font-size: 2rem; }
   .section-left p  { font-size: 1rem !important; margin-bottom: 1rem; }
 
-  .submit-button { display: block; margin: 0 auto}
+  .submit-button { display: block; margin: 0 auto; }
 
   .contact-form {
     width: 100%;
@@ -139,7 +147,7 @@
     align-items: flex-start;
   }
 
-  .checkbox-row { gap: 0.3rem; margin-bottom: 0rem;}
+  .checkbox-row { gap: 0.3rem; margin-bottom: 0; }
 
   .contact-form textarea::placeholder {
     font-family: inherit;
