@@ -51,6 +51,14 @@ export default function About() {
             {t('AboutPage.button-order')}
           </button>
 
+          {/* ✨ New button for price list */}
+          <button
+            className="about-button"
+            onClick={() => window.open('images/cennik.pdf', '_blank')}
+          >
+            {t('AboutPage.button-pricelist')}
+          </button>
+
         </div>
       </div>
     </div>

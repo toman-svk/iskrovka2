@@ -8,25 +8,26 @@
   flex-wrap: nowrap; /* Force horizontal layout */
 }
 
+.contact-form-wrapper .h1 {
+  color: var(--main-blue);
+}
+
 
 .section-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 0 2rem;
-  box-sizing: border-box;
+  flex: 1;
+  color: var(--main-white);
+  padding-top: 1rem;
+  justify-content: flex-start;
 }
 
 .section-right {
+  padding-top: 3rem;
+  margin-left: 3rem;
+  min-width: 260px;
+  flex-shrink: 0;
   display: flex;
-  justify-content: center;   /* center image horizontally */
-  align-items: center;       /* center image vertically */
-  flex: 0 0 50%;
-  max-width: 50%;
-  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .contact-form {
@@ -43,6 +44,11 @@
   color: #000;
 }
 
+.required {
+  color: red;
+  margin-left: 0.2rem;
+}
+
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
@@ -57,13 +63,24 @@
   resize: vertical;
 }
 
-  .checkbox-row {
-    display: flex;               /* ✅ Ensure it's a row */
-    align-items: center;         /* ✅ Vertically align checkbox and text */
-    gap: 0.5rem;                 /* ✅ Control spacing between checkbox and label */
-    margin-bottom: 1rem;
-    white-space: nowrap;
-  }
+.checkbox-row {
+  display: flex;               /* ✅ Ensure it's a row */
+  align-items: center;         /* ✅ Vertically align checkbox and text */
+  gap: 0.5rem;                 /* ✅ Control spacing between checkbox and label */
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin: 0;        /* remove browser default */
+  padding: 0;
+  width: auto;      /* make sure it doesn't stretch */
+  height: auto;
+}
+
+.checkbox-row label {
+  margin: 0;        /* remove default label margin */
+}
 
 .submit-button {
   padding: 0.75rem 1.5rem;

@@ -18,7 +18,7 @@ export default function AkoFunguje() {
           </p>
 
           <button
-            className="ako-funguje-button"
+            className="orange-button"
             onClick={() => window.open('images/ukazka_z_merania.pdf', '_blank')}
           >
             {t('AkoFunguje.button')}

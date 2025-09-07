@@ -9,15 +9,15 @@ export default function AboutSection() {
     <div className="about-section-wrapper">
       <div className="container">
         <div className="about-section">
-          <div className="about-left">
+          <div className="about-section-left">
             <h1>{t('AboutSection.header1')}</h1>
             <p>{t('AboutSection.text1')}</p>
             
-            <Link to="/about" className="about-section-button">
+            <Link to="/about" className="orange-button">
                 {t('AboutSection.button1')}
             </Link>
           </div>
-          <div className="about-right">
+          <div className="about-section-right">
             <img
               src="/images/adam/adam0.jpg"
               alt={t('AboutSection.header1')}

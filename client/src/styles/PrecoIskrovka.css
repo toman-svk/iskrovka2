@@ -1,55 +1,33 @@
 
-
 .preco-section-wrapper {
   width: 100%;
-    background-color: white;
-  padding-bottom: 3rem;
+  background-color: var(--main-cream);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.preco-section-wrapper .container {
+  width: var(--container-width)
 }
 
 .preco-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 700px;
-  background-color: white;
 }
 
-
-.preco-left {
-  flex: 0 0 60%;
-  color: black;
-  padding-top: 1rem;
+.preco-left { 
+  flex: 1;
   justify-content: flex-start;
-  background-color: white;
-}
-
-.preco-left h1 {
-    color: var(--main-blue);
-}
-
-.preco-left p {
-    font-size: 1.5rem;
-  line-height: 1.6;
 }
 
 .preco-right {
-  background-color: white;
-  color: var(--main-blue);
-  padding-right: 2rem;
-  padding-top: 3rem;
-  flex: 0 0 40%;
+  min-width: 260px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.preco-image {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  border-radius: 8px;
-  object-fit: contain;
+  margin-left: 3rem;
 }
 
 
@@ -84,7 +62,6 @@
 
   .preco-left p {
     font-size: 1rem !important;
-    margin-bottom: 3rem;
   }
 
   .preco-section-button {
@@ -96,7 +73,6 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-
   }
 
   .preco-left, .preco-right {

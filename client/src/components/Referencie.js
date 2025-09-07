@@ -11,23 +11,22 @@ export default function Referencie() {
         <p className="referencie-intro">{t('Referencie.intro')}</p>
 
         <div className="testimonials">
+          
           <div className="testimonial-box">
-            <div className="stars">★★★★★</div>
+            <div className="testimonial-header">{t('Referencie.review1.header')}</div>
             <p className="testimonial-text">{t('Referencie.review1.text')}</p>
-            <p className="testimonial-author">
-              <strong>{t('Referencie.review1.author')}</strong><br />
-              {t('Referencie.review1.position')}
-            </p>
           </div>
 
           <div className="testimonial-box">
-            <div className="stars">★★★★★</div>
+            <div className="testimonial-header">{t('Referencie.review2.header')}</div>
             <p className="testimonial-text">{t('Referencie.review2.text')}</p>
-            <p className="testimonial-author">
-              <strong>{t('Referencie.review2.author')}</strong><br />
-              {t('Referencie.review2.position')}
-            </p>
           </div>
+
+          <div className="testimonial-box">
+            <div className="testimonial-header">{t('Referencie.review3.header')}</div>
+            <p className="testimonial-text">{t('Referencie.review3.text')}</p>
+          </div>
+
         </div>
       </div>
     </div>

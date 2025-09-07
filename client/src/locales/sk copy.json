@@ -2,23 +2,22 @@
   "Navbar": {
     "home-button": "Domov",
     "o-skuske-button": "O iskrovej skúške",
-    "pricelist-button": "Cenník",
     "contact-button": "Kontakt"
   },
   "AboutSection": {
-    "header1": "Ako funguje naše meranie",
-    "text1": "Rýchlo a presne odhalíme miesta, kde strecha zateká. Bez poškodenia izolácie a bez zbytočných zásahov.",
+    "header1": "Iskrová skúška strechy",
+    "text1": "Presné testovanie izolácie strechy pomocou iskrovej metódy. Zistíme, kde presne zateká – rýchlo, bez poškodenia a zbytočných zásahov.",
     "button1": "Zistiť viac"
   },
   "ServiceOffer": {
     "header1": "Iskrová skúška",
     "text1": "Naše testovanie je založené na technickej presnosti. S odborným prístupom a jasnou komunikáciou vám pomáhame rýchlo vyriešiť problémy s izoláciou.",
     "card1": "Presné zistenie stavu izolácie",
-    "card2": "Protokol o vykonaní iskrovej skúšky",
-    "card3": "Úspora nákladov"
+    "card2": "Odborné odporúčania",
+    "card3": "Bez zbytočných nákladov"
   },
   "AboutPage": {
-    "header": "Iskrová skúška: \n Spoľahlivá kontrola tesnosti hydroizolačných fólií",
+    "header": "Iskrová skúška: Spoľahlivá kontrola tesnosti hydroizolačných fólií",
     "paragraph1": "Čo je iskrová skúška a prečo ju využiť? Iskrová skúška je overená a presná metóda kontroly nepriepustnosti hydroizolačných vrstiev, najčastejšie PVC, TPO, FPO alebo asfaltových pásov. Pomocou detekčného zariadenia s vysokonapäťovým výbojom dokáže odhaliť aj tie najmenšie porušenia – mikrotrhliny, prepichnutia či netesnosti, ktoré by inak ostali skryté pod povrchom.",
     "paragraph2": "Ako iskrová skúška funguje Princíp je jednoduchý: fólia sa podloží elektricky vodivým materiálom (napr. geotextília alebo vlhký podklad) a následne sa po povrchu vedie elektróda pripojená na vysokonapäťový zdroj. Ak je v izolácii diera alebo trhlina, elektrický výboj cez ňu preskočí – čo sa okamžite zaznamená. Tento proces je rýchly, presný a spoľahlivý.",
     "when-header": "Kedy sa odporúča vykonať iskrovú skúšku?",
@@ -44,8 +43,7 @@
       "Majitelia domov – pri pochybnostiach o spoľahlivosti strechy"
     ],
     "button-sample": "Pozrieť ukážku z merania",
-    "button-order": "Objednať si iskrovú skúšku",
-    "button-pricelist": "Zobraziť cenník"
+    "button-order": "Objednať si iskrovú skúšku"
   },
   "ContactPage": {
     "header": "Kontaktujte nás",
@@ -62,44 +60,39 @@
         "name-placeholder": "Vaše meno",
         "email-label": "Email",
         "email-placeholder": "Váš email",
-        "phone-label": "Telefónne číslo (nepovinné)",
-        "phone-placeholder": "Vaše tel. číslo",
         "message-label": "Správa",
         "message-placeholder": "Napíšte svoju správu...",
-        "terms-label": "Súhlasím so spracovaním osobných údajov",
+        "terms-label": "Súhlasím s podmienkami",
         "submit-button": "Odoslať",
         "success-alert": "Správa bola odoslaná!",
-        "error-alert": "Nastala chyba pri odosielaní.",
-        "error-message": "Pre odoslanie musíte súhlasiť so spracovaním osobných údajov"
+        "error-alert": "Nastala chyba pri odosielaní."
         },
     "AkoFunguje": {
-        "header": "Čo všetko získate z merania",
-        "paragraph1": "Iskrová skúška je spoľahlivý spôsob, ako presne odhaliť poruchy a netesnosti v hydroizolácii plochých striech. Meranie je rýchle, nepoškodí strechu a výsledok máte ihneď. Súčasťou je aj protokol o vykonanej skúške.",
+        "header": "Iskrová skúška strechy",
+        "paragraph1": "Iskrová skúška je presný spôsob, ako odhaliť poruchy a netesnosti na hydroizolácii plochých striech. Meranie sa vykonáva bez poškodenia strešnej vrstvy a výsledok získate ihneď. Súčasťou výstupu je aj protokol o vykonanej skúške.",
         "checklist": [
             "Presná lokalizácia netesností",
             "Odborné odporúčania ďalšieho postupu",
             "Bez zbytočných zásahov alebo rozoberania strechy"
         ],
-        "button": "Pozrieť ukážku z merania"
+        "button": "Pozrieť skúšku z merania"
         },
     "PrecoIskrovka": {
-        "header": "Reálna skúsenosť zo stavby",
-        "text": "Pri kontrole strechy bytového domu v Bratislave sme odhalili niekoľko netesností v hydroizolácii. Voda presakovala cez detaily pri atike a spôsobovala škody v dvoch bytoch. Vďaka iskrovej skúške sme presne určili miesta prieniku vody, takže oprava bola rýchla a obmedzila sa len na potrebné miesta. Celý proces trval jeden deň a majiteľ ušetril tisíce eur, ktoré by inak musel investovať do rozsiahlej rekonštrukcie."
+        "header": "Prečo si vybrať Iskrovku?",
+        "text": "Iskrovka predlžuje životnosť vašich striech a znižuje náklady na opravy. Naše iskrové skúšky zabezpečujú včasné odhalenie problémov, čím šetríte čas a peniaze."
         },
     "Referencie": {
-        "header": "Skúsenosti z našich stavieb",
+        "header": "Referencie",
         "intro": "Pomohli sme desiatkam zákazníkov presne zistiť stav strešnej izolácie. Tu sú ich skúsenosti:",
         "review1": {
-            "text": "Pri kontrole strechy sme odhalili netesnosti pri atike, cez ktoré presakovala voda do dvoch bytov. Skúška presne ukázala miesta poruchy a oprava bola hotová za jediný deň. Majiteľ tak ušetril na rozsiahlej rekonštrukcii.",
-            "header": "Bytový dom, Bratislava"
+            "text": "“S Iskrovkou sme získali istotu, že je všetko v poriadku. Prístup bol profesionálny a presný.”",
+            "author": "Ján Novák",
+            "position": "Majiteľ, Stavby s.r.o."
         },
         "review2": {
-            "text": "Na ploche viac ako 2 000 m² sme testovaním odhalili tri netesnosti v izolácii. Vďaka presnej lokalizácii sa opravovalo len to, čo bolo skutočne potrebné, bez odstávky prevádzky.",
-            "header": "Výrobná hala, Trnava"
-        },
-        "review3": {
-            "text": "Objednávateľ mal podozrenie na zatekanie, no nevedel určiť zdroj. Iskrová skúška potvrdila poškodenie izolácie pri prestupoch vzduchotechniky. Oprava bola rýchla a zabránila ďalšiemu poškodeniu interiéru.",
-            "header": "Administratívna budova, Nitra"
+            "text": "„Odporúčam každému, kto potrebuje spoľahlivú kontrolu izolácie. Rýchle a jasné výsledky.“",
+            "author": "Mária Kováčová",
+            "position": "Manažérka, Postav s.r.o."
         }
         }
 }

@@ -160,7 +160,7 @@ a.normal-button {
 }
 
 .contact-button {
-  background-color: #ff5500;
+  background-color: var(--main-orange);
   color: #fff;
   border: none;
   padding: 0.5rem 3rem;
@@ -174,10 +174,8 @@ a.normal-button {
 }
 
 .contact-button:hover {
-  background-color: #e64a00;
+  background-color: var(--main-orange-darker);
 }
-
-
 
   .logo {
     width: 10rem;

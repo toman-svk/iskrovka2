@@ -2,23 +2,24 @@
   "Navbar": {
     "home-button": "Domů",
     "o-skuske-button": "O jiskrové zkoušce",
+    "pricelist-button": "Ceník",
     "contact-button": "Kontakt"
   },
   "AboutSection": {
-    "header1": "Jiskrová zkouška střechy",
-    "text1": "Přesné testování izolace střechy pomocí jiskrové metody. Zjistíme, kde přesně zatéká – rychle, bez poškození a zbytečných zásahů.",
+    "header1": "Jak funguje naše měření",
+    "text1": "Rychle a přesně odhalíme místa, kde střecha zatéká. Bez poškození izolace a bez zbytečných zásahů.",
     "button1": "Zjistit více"
   },
   "ServiceOffer": {
     "header1": "Jiskrová zkouška",
     "text1": "Naše testování je založeno na technické přesnosti. S odborným přístupem a jasnou komunikací vám pomáháme rychle vyřešit problémy s izolací.",
     "card1": "Přesné zjištění stavu izolace",
-    "card2": "Odborná doporučení",
-    "card3": "Bez zbytečných nákladů"
+    "card2": "Protokol o provedení jiskrové zkoušky",
+    "card3": "Úspora nákladů"
   },
   "AboutPage": {
-    "header": "Jiskrová zkouška: Spolehlivá kontrola těsnosti hydroizolačních fólií",
-    "paragraph1": "Co je jiskrová zkouška a proč ji využít? Jiskrová zkouška je ověřená a přesná metoda kontroly neprůchodnosti hydroizolačních vrstev, nejčastěji PVC, TPO, FPO nebo asfaltových pásů. Pomocí detekčního zařízení s vysokonapěťovým výbojem dokáže odhalit i ty nejmenší poruchy – mikrotrhliny, propíchnutí či netěsnosti, které by jinak zůstaly skryté pod povrchem.",
+    "header": "Jiskrová zkouška:\nSpolehlivá kontrola těsnosti hydroizolačních fólií",
+    "paragraph1": "Co je jiskrová zkouška a proč ji využít? Jiskrová zkouška je ověřená a přesná metoda kontroly nepropustnosti hydroizolačních vrstev, nejčastěji PVC, TPO, FPO nebo asfaltových pásů. Pomocí detekčního zařízení s vysokonapěťovým výbojem dokáže odhalit i ty nejmenší poruchy – mikrotrhliny, propíchnutí či netěsnosti, které by jinak zůstaly skryté pod povrchem.",
     "paragraph2": "Jak jiskrová zkouška funguje? Princip je jednoduchý: fólie se podloží elektricky vodivým materiálem (např. geotextilie nebo vlhký podklad) a následně se po povrchu vede elektroda připojená na vysokonapěťový zdroj. Pokud je v izolaci díra nebo trhlina, elektrický výboj přes ni přeskočí – což se okamžitě zaznamená. Tento proces je rychlý, přesný a spolehlivý.",
     "when-header": "Kdy se doporučuje provést jiskrovou zkoušku?",
     "when-list": [
@@ -34,65 +35,71 @@
       "Neinvazivní metoda – nepoškodí fólii",
       "Rychlá realizace",
       "Zvyšuje jistotu a snižuje riziko pozdějších škod",
-      "Vhodná pro ploché i šikmé střechy s fóliovou hydroizolací"
+      "Hodí se na ploché i šikmé střechy s fóliovou hydroizolací"
     ],
     "for-header": "Pro koho je jiskrová zkouška určena",
     "for-list": [
-      "Správci budov – pro prevenci zatékání a snížení nákladů na opravy",
-      "Stavební firmy a developeři – pro kontrolu kvality prací a prokazatelné výsledky",
+      "Správci budov – prevence zatékání a snížení nákladů na opravy",
+      "Stavební firmy a developeři – kontrola kvality prací a doložitelné výsledky",
       "Majitelé domů – při pochybnostech o spolehlivosti střechy"
     ],
     "button-sample": "Zobrazit ukázku z měření",
-    "button-order": "Objednat jiskrovou zkoušku"
+    "button-order": "Objednat jiskrovou zkoušku",
+    "button-pricelist": "Zobrazit ceník"
   },
   "ContactPage": {
     "header": "Kontaktujte nás",
-    "email-title": "E-mail",
+    "email-title": "Email",
     "email-description": "info@iskrovka.cz",
     "phone-title": "Telefon",
     "phone-description": "+421 948 355 730",
     "office-title": "Kancelář",
     "office-description": "Seredská 255A/9173, 917 05 Trnava, Slovensko"
+  },
+  "ContactForm": {
+    "header": "Kontaktní formulář",
+    "name-label": "Jméno",
+    "name-placeholder": "Vaše jméno",
+    "email-label": "Email",
+    "email-placeholder": "Váš email",
+    "phone-label": "Telefon (nepovinné)",
+    "phone-placeholder": "Váš telefon (nepovinné)",
+    "message-label": "Zpráva",
+    "message-placeholder": "Napište svou zprávu...",
+    "terms-label": "Souhlasím se zpracováním osobních údajů",
+    "submit-button": "Odeslat",
+    "success-alert": "Zpráva byla odeslána!",
+    "error-alert": "Došlo k chybě při odesílání.",
+    "error-message": "Pro odeslání musíte souhlasit se zpracováním osobních údajů"
+  },
+  "AkoFunguje": {
+    "header": "Co vše získáte z měření",
+    "paragraph1": "Jiskrová zkouška je spolehlivý způsob, jak přesně odhalit poruchy a netěsnosti v hydroizolaci plochých střech. Měření je rychlé, nepoškodí střechu a výsledek máte ihned. Součástí je i protokol o provedené zkoušce.",
+    "checklist": [
+      "Přesná lokalizace netěsností",
+      "Odborná doporučení dalšího postupu",
+      "Bez zbytečných zásahů nebo rozebírání střechy"
+    ],
+    "button": "Zobrazit ukázku z měření"
+  },
+  "PrecoIskrovka": {
+    "header": "Reálná zkušenost ze stavby",
+    "text": "Při kontrole střechy bytového domu v Bratislavě jsme odhalili několik netěsností v hydroizolaci. Voda prosakovala přes detaily u atiky a způsobovala škody ve dvou bytech. Díky jiskrové zkoušce jsme přesně určili místa průniku vody, takže oprava byla rychlá a omezila se jen na potřebná místa. Celý proces trval jeden den a majitel ušetřil tisíce eur, které by jinak musel investovat do rozsáhlé rekonstrukce."
+  },
+  "Referencie": {
+    "header": "Zkušenosti z našich staveb",
+    "intro": "Pomohli jsme desítkám zákazníků přesně zjistit stav střešní izolace. Zde jsou jejich zkušenosti:",
+    "review1": {
+      "text": "Při kontrole střechy jsme odhalili netěsnosti u atiky, přes které prosakovala voda do dvou bytů. Zkouška přesně ukázala místa poruchy a oprava byla hotová za jediný den. Majitel tak ušetřil na rozsáhlé rekonstrukci.",
+      "header": "Bytový dům, Bratislava"
     },
-    "ContactForm": {
-        "header": "Kontaktní formulář",
-        "name-label": "Jméno",
-        "name-placeholder": "Vaše jméno",
-        "email-label": "E-mail",
-        "email-placeholder": "Váš e-mail",
-        "message-label": "Zpráva",
-        "message-placeholder": "Napište svou zprávu...",
-        "terms-label": "Souhlasím s podmínkami",
-        "submit-button": "Odeslat",
-        "success-alert": "Zpráva byla odeslána!",
-        "error-alert": "Došlo k chybě při odesílání."
-        },
-    "AkoFunguje": {
-        "header": "Jiskrová zkouška střechy",
-        "paragraph1": "Jiskrová zkouška je přesný způsob, jak odhalit poruchy a netěsnosti na hydroizolaci plochých střech. Měření se provádí bez poškození vrstvy a výsledek získáte ihned. Součástí výstupu je i protokol o provedené zkoušce.",
-        "checklist": [
-            "Přesná lokalizace netěsností",
-            "Odborná doporučení dalšího postupu",
-            "Bez zbytečných zásahů nebo rozebírání střechy"
-        ],
-        "button": "Zobrazit zkoušku z měření"
-        },
-    "PrecoIskrovka": {
-        "header": "Proč si vybrat Iskrovku?",
-        "text": "Iskrovka prodlužuje životnost střech a snižuje náklady na opravy. Naše jiskrové zkoušky zajišťují včasné odhalení problémů, čímž šetříte čas i peníze."
-        },
-    "Referencie": {
-        "header": "Reference",
-        "intro": "Pomohli jsme desítkám zákazníků přesně zjistit stav střešní izolace. Zde jsou jejich zkušenosti:",
-        "review1": {
-            "text": "„S Iskrovkou jsme získali jistotu, že je vše v pořádku. Přístup byl profesionální a přesný.“",
-            "author": "Jan Novák",
-            "position": "Majitel, Stavby s.r.o."
-        },
-        "review2": {
-            "text": "„Doporučuji každému, kdo potřebuje spolehlivou kontrolu izolace. Rychlé a jasné výsledky.“",
-            "author": "Marie Kováčová",
-            "position": "Manažerka, Postav s.r.o."
-        }
+    "review2": {
+      "text": "Na ploše více než 2 000 m² jsme testováním odhalili tři netěsnosti v izolaci. Díky přesné lokalizaci se opravovalo jen to, co bylo skutečně nutné, bez odstávky provozu.",
+      "header": "Výrobní hala, Trnava"
+    },
+    "review3": {
+      "text": "Objednatel měl podezření na zatékání, ale nevěděl určit zdroj. Jiskrová zkouška potvrdila poškození izolace při prostupech vzduchotechniky. Oprava byla rychlá a zabránila dalšímu poškození interiéru.",
+      "header": "Administrativní budova, Nitra"
     }
+  }
 }

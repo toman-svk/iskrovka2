@@ -31,9 +31,12 @@ export default function ContactForm() {
       <div className="container" id="contact-form">
         <div className="contact-form-section">
           <div className="section-left">
-            <h2>{t('ContactForm.header')}</h2>
+            <h1>{t('ContactForm.header')}</h1>
             <form className="contact-form" onSubmit={handleSubmit}>
-              <label htmlFor="name">{t('ContactForm.name-label')}</label>
+              
+              <label htmlFor="name">
+                {t('ContactForm.name-label')} <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 id="name"
@@ -42,7 +45,9 @@ export default function ContactForm() {
                 required
               />
 
-              <label htmlFor="email">{t('ContactForm.email-label')}</label>
+              <label htmlFor="email">
+                {t('ContactForm.email-label')} <span className="required">*</span>
+              </label>
               <input
                 type="email"
                 id="email"
@@ -51,7 +56,19 @@ export default function ContactForm() {
                 required
               />
 
-              <label htmlFor="message">{t('ContactForm.message-label')}</label>
+              <label htmlFor="phone">
+                {t('ContactForm.phone-label')}
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder={t('ContactForm.phone-placeholder')}
+              />
+
+              <label htmlFor="message">
+                {t('ContactForm.message-label')} <span className="required">*</span>
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -60,11 +77,27 @@ export default function ContactForm() {
               ></textarea>
 
               <div className="checkbox-row">
-                <input type="checkbox" id="terms" name="terms" required />
-                <label htmlFor="terms">{t('ContactForm.terms-label')}</label>
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  required
+                  onInvalid={e =>
+                    e.target.setCustomValidity(t('ContactForm.error-message'))
+                  }
+                  onInput={e => e.target.setCustomValidity("")}
+                />
+                <a
+                  href="/images/podmienky.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="terms-link"
+                >
+                  {t('ContactForm.terms-label')} <span className="required">*</span>
+                </a>
               </div>
 
-              <button type="submit" className="submit-button">
+              <button type="submit" className="orange-button">
                 {t('ContactForm.submit-button')}
               </button>
             </form>
@@ -79,8 +112,6 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-
     </div>
-    
   );
 }

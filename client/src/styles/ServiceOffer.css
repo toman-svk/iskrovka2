@@ -1,23 +1,22 @@
 /* Service Offer */
 
-
+.service-offer-wrapper {
+    background-color: var(--main-cream);
+}
 
 .service-offer-section {
-  padding: 60px 20px;
-  background-color: white;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   text-align: center;
 }
 
-.service-offer-wrapper h1 {
-    color: var(--main-blue);
+.service-offer-wrapper .container{
+  width: var(--container-width)
 }
 
 .service-offer-wrapper p {
-    font-size: 1.5rem;
-    color: black;
     max-width: 700px;
     margin: 0 auto 2rem auto;
-    line-height: 1.6;
 }
 
 .service-grid {
@@ -28,8 +27,8 @@
 }
 
 .service-card {
-  min-width: 19rem;
-  max-width: 19rem;
+  min-width: 18rem;
+  max-width: 18rem;
   min-height: 19rem;
   max-height: 19rem;
   flex: 0 0 auto;

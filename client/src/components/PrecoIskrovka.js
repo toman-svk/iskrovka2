@@ -16,7 +16,7 @@ export default function PrecoIskrovka() {
             <img
               src="/images/lubos_iskri.jpg"
               alt={t('AkoFunguje.header')}
-              className="preco-image"
+              className="about-image"
             />
           </div>
         </div>

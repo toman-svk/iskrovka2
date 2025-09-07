@@ -1,7 +1,16 @@
 .referencie-wrapper {
   width: 100%;
-  background-color: white;
-  padding: 4rem 0;
+  background-color: var(--main-white);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.referencie-wrapper .h1 {
+  margin-top: 0 !important;
+}
+
+.referencie-wrapper .container {
+  width: var(--container-width)
 }
 
 .referencie-heading {
@@ -9,28 +18,28 @@
 }
 
 .referencie-intro {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: var(--text-size);
+  margin-bottom: 3rem;
 }
 
 .testimonials {
-  display: flex;
-  justify-content: center; /* ✅ instead of space-between */
-  align-items: center;     /* ✅ make sure items are centered vertically too */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 in one row on desktop */
   gap: 2rem;
-  flex-wrap: wrap;         /* ✅ allow wrapping on smaller screens too */
+  align-items: stretch; /* same height rows */
   text-align: left;
 }
 
 .testimonial-box {
-  background-color: #f8f8f8;
-  flex: 0 0 48%;
+  background: #f8f8f8;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,.05);
+  transition: transform .4s ease, box-shadow .4s ease;
   cursor: default;
+  /* make content fill height nicely */
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-box:hover {
@@ -38,21 +47,15 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
-.stars {
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 1rem;
-}
-
-.testimonial-text {
+.testimonial-text { 
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  flex: 1; /* pushes footer/author down if you add one later */
 }
 
-.testimonial-author {
-  font-size: 1rem;
-  color: #333;
+.testimonial-header {
+  font-size: var(--text-size);
   margin-bottom: 1rem;
 }
 

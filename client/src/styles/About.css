@@ -25,9 +25,11 @@
 }
 
 .about-inside-wrapper {
-  width: 100%;
+  width: 90%;          /* take only 80% of the container width */
+  margin: 0 auto;      /* center horizontally */
   background-color: var(--main-blue);   
   min-height: 50rem;
+  padding-bottom: 2rem; /* optional, so text doesn't touch bottom */
 }
 
 .about-inside-wrapper h1 {
@@ -35,6 +37,7 @@
   font-size: 3rem;
   color: white;
   max-width: 70%;
+  white-space: pre-line;
 }
 
 .about-inside-wrapper p {

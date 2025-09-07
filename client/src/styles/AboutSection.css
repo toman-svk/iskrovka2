@@ -1,74 +1,52 @@
-.about-section-button {
-  margin-top: 2rem;
-  background-color: var(--main-orange);
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 9999px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-  text-decoration: none;
-}
 
 .about-section-button:hover {
   background-color: var(--main-orange);
 }
 
-
-
-/* === About Us Section === */ 
-
-/* Full-width background for About section */
 .about-section-wrapper {
   width: 100%;
   background-color: var(--main-blue);
+}
+
+.about-section-wrapper .container {
+  width: var(--container-width);
 }
 
 .about-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 700px;
+  padding-bottom: var(--section-padding);
 }
 
-
-.about-left {
-  background-color: var(--main-blue);
+.about-section-left {
   flex: 1;
-  color: white;
+  color: var(--main-white);
   padding-top: 1rem;
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-.about-left h1 {
-  color: white;
+.about-section-left p {
+  color: var(--main-white);
+  margin-bottom: 3rem;
 }
 
-.about-left p {
-    font-size: 1.5rem;
-  line-height: 1.6;
+.about-section-left h1 {
+  color: var(--main-white);
+  margin-top: var(--section-padding)
 }
 
-.about-right {
-  background-color: var(--main-blue);
-  color: white;
-  padding-right: 2rem;
+.about-section-right {
   padding-top: 3rem;
+  margin-left: 3rem;
   min-width: 260px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-.about-image {
 
-  max-width: 100%;
-  height: 30rem;
-  border-radius: 8px;
-}
 
 /* Phone Layout */
 
@@ -81,13 +59,13 @@
     overflow: hidden;
   }
 
-  .about-left, .about-right {
+  .about-section-left, .about-section-right {
     max-width: 100%;
     min-width: 100%;
     margin-bottom: 2rem;
   }
 
-  .about-right {
+  .about-section-right {
     width: 100%;
     box-sizing: border-box;
     padding: 0; /* <-- reset padding */
@@ -101,11 +79,11 @@
     margin-right: auto;
   }
 
-  .about-left h1 {
+  .about-section-left h1 {
     font-size: 2rem;
   }
 
-  .about-left p {
+  .about-section-left p {
     font-size: 1rem !important;
     margin-bottom: 2rem;
   }
@@ -122,7 +100,7 @@
     box-sizing: border-box;
   }
 
-    .about-section-wrapper {
+  .about-section-wrapper {
     width: 100%;
     background-color: var(--main-blue);
     box-sizing: border-box;

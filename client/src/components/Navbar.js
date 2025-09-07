@@ -52,6 +52,7 @@ const Navbar = () => {
               setMenuOpen(!menuOpen);
               setLanguageMenuOpen(false); // Close language menu
             }}
+            aria-label="Toggle menu"
           >
             <FaBars />
           </button>
@@ -63,6 +64,8 @@ const Navbar = () => {
                   setLanguageMenuOpen(!languageMenuOpen);
                   setMenuOpen(false); // Close nav menu
                 }}
+                aria-haspopup="menu"
+                aria-expanded={languageMenuOpen}
               >
                 <img
                   src={languages[language].flag}
@@ -71,39 +74,48 @@ const Navbar = () => {
                 />
               </button>
 
-                <div className={`language-dropdown ${languageMenuOpen ? 'show' : ''}`}>
-                  {Object.entries(languages)
-                    .filter(([key]) => key !== language)
-                    .map(([code, { label, flag }]) => (
-                      <button
-                        key={code}
-                        onClick={() => {
-                          setLanguage(code);
-                          setLanguageMenuOpen(false);
-                        }}
-                      >
-                        <img src={flag} alt={label} className="flag-icon small" />
-                        {label}
-                      </button>
-                    ))}
-                </div>
-              
+              <div className={`language-dropdown ${languageMenuOpen ? 'show' : ''}`}>
+                {Object.entries(languages)
+                  .filter(([key]) => key !== language)
+                  .map(([code, { label, flag }]) => (
+                    <button
+                      key={code}
+                      onClick={() => {
+                        setLanguage(code);
+                        setLanguageMenuOpen(false);
+                      }}
+                    >
+                      <img src={flag} alt={label} className="flag-icon small" />
+                      {label}
+                    </button>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Mobile nav links (toggle with hamburger) */}
-          <div className={`nav-links-mobile ${menuOpen ? 'show' : ''}`}>
-            <Link to="/" className="normal-button" onClick={() => setMenuOpen(false)}>
-              {t('Navbar.home-button')}
-            </Link>
-            <Link to="/about" className="normal-button" onClick={() => setMenuOpen(false)}>
-              {t('Navbar.o-skuske-button')}
-            </Link>
-            <Link to="/contact" className="contact-button" onClick={() => setMenuOpen(false)}>
-              {t('Navbar.contact-button')}
-            </Link>
-          </div>
+        <div className={`nav-links-mobile ${menuOpen ? 'show' : ''}`}>
+          <Link to="/" className="normal-button" onClick={() => setMenuOpen(false)}>
+            {t('Navbar.home-button')}
+          </Link>
+          <Link to="/about" className="normal-button" onClick={() => setMenuOpen(false)}>
+            {t('Navbar.o-skuske-button')}
+          </Link>
+          {/* New Pricelist link (PDF) */}
+          <a
+            href="/images/cennik.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="normal-button"
+            onClick={() => setMenuOpen(false)}
+          >
+            {t('Navbar.pricelist-button')}
+          </a>
+          <Link to="/contact" className="contact-button" onClick={() => setMenuOpen(false)}>
+            {t('Navbar.contact-button')}
+          </Link>
+        </div>
 
         <div className='navbar-right-mobile'>
           <img src="/images/logo_na_modrom.png" alt="Logo" className="logo" />
@@ -117,6 +129,8 @@ const Navbar = () => {
               <button
                 className="language-button"
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                aria-haspopup="menu"
+                aria-expanded={languageMenuOpen}
               >
                 <img
                   src={languages[language].flag}
@@ -147,15 +161,24 @@ const Navbar = () => {
           </div>
 
           {/* Desktop nav links (always shown on larger screens) */}
-            <Link to="/" className="normal-button">
-              {t('Navbar.home-button')}
-            </Link>
-            <Link to="/about" className="normal-button">
-              {t('Navbar.o-skuske-button')}
-            </Link>
-            <Link to="/contact" className="contact-button">
-              {t('Navbar.contact-button')}
-            </Link>
+          <Link to="/" className="normal-button">
+            {t('Navbar.home-button')}
+          </Link>
+          <Link to="/about" className="normal-button">
+            {t('Navbar.o-skuske-button')}
+          </Link>
+          {/* New Pricelist link (PDF) */}
+          <a
+            href="/images/cennik.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="normal-button"
+          >
+            {t('Navbar.pricelist-button')}
+          </a>
+          <Link to="/contact" className="contact-button">
+            {t('Navbar.contact-button')}
+          </Link>
         </div>
 
         <div className="navbar-right">

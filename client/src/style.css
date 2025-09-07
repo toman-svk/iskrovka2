@@ -2,10 +2,17 @@
   --main-red: rgb(204, 0, 0);
   --main-blue: #1F3A93;
   --main-orange: #F96A0B;
+  --main-orange-darker: #e64a00;
   --main-cream: #f3f3f3;
+  --main-white: white;
   --background2: #ededed;
   --card-text-color: grey;
   --contact-form-background: #ededed;
+  --container-width: 80%;
+  --section-padding: 3rem;
+  --text-size: 1.5rem;
+  --line-height: 1.5;
+
 }
 
 /* src/style.css */
@@ -19,6 +26,39 @@ body {
 h1 {
   font-family: 'League Spartan', sans-serif;
   font-size: 3rem;
+  margin-top: 0;
+  color: var(--main-blue);
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;                  /* default text color */
+}
+
+.orange-button {
+  margin-top: 2rem;
+  background-color: var(--main-orange);
+  color: var(--main-white);
+  font-size: var(--text-size);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.orange-button:hover {
+  background-color: var(--main-orange-darker);
+}
+
+.about-image {
+  height: 30rem;
+  width: auto;
+  border-radius: 8px;
 }
 
 
